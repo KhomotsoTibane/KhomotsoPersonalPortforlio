@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <script src="https://kit.fontawesome.com/36c1d4a9bc.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <title>Khomotso Tibane</title>
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo">
+                <a href="#">Portfo<span>lio</span></a></div>
+            <ul class="menu">
+                <li><a href="#" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn ">About</a></li>
+                <li><a href="#skills" class="menu-btn ">Skills</a></li>
+                <li><a href="#work" class="menu-btn">Work</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- home section start -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Khomotso</div>
+                <div class="text-3">And I am a <span class="typing"></span></div>
+                <a href="#work">View Projects</a>
+            </div>
+
+        </div>
+        <div class="scroll-down">
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+    </section>
+
+    <!-- about section -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title" data-heading="Intro">About me</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="images/profile3.jpeg" alt="khomotso-portrait-img">
+                </div>
+                <div class="column right">
+                    <p class="text"> I am a Web Developer currently studying Computer Science part-time.
+                        I enjoy learning new progamming technologies and I am able to grasp new concepts without much dificulty. My interests are mainly towards Backend
+                        Web Development and Cloud practice.
+                        I always strive to deliver quality solutions to any problem that I need to solve to the highest
+                        standard.
+                    </p>
+                </div>
+            </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title" data-heading="My Abilities">My Experience</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <p>Over the past years I have made the effort to try and refine my knowledge in the languages already I
+                        know, to learn new languages and technologies within the tech environment.
+                        <br>
+                        Here is a list of the languages and concepts that I have covered on my journey thus far:
+                    </p>
+                </div>
+                <div class="column right">
+                    <div id="myCanvasContainer">
+                        <canvas width="400" height="400" id="myCanvas">
+                            <ul id="tags">
+                                <li class="language"><a href="#" target="_blank">HTML</a></li>
+                                <li class="language"><a href="#" target="_blank">CSS</a></li>
+                                <li class="language"><a href="#" target="_blank">Javascript</a></li>
+                                <li class="language"><a href="#" target="_blank">Java</a></li>
+                                <li class="language"><a href="#" target="_blank">C#</a></li>
+                                <li class="language"><a href="#" target="_blank">Bootstrap</a></li>
+                                <li class="language"><a href="#" target="_blank">Node Js</a></li>
+                                <li class="language"><a href="#" target="_blank">JQuery</a></li>
+                                <li class="language"><a href="#" target="_blank">Git</a></li>
+                                <li class="language"><a href="#" target="_blank">React Js</a></li>
+                                <li class="language"><a href="#" target="_blank">Authentication</a></li>
+                                <li class="language"><a href="#" target="_blank">GitHub</a></li>
+                            </ul>
+                        </canvas>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--===== Work =====-->
+    <section class="work section" id="work">
+        <h2 data-heading="My Portfolio" class="title">Recent Works</h2>
+
+        <div class="work-filters">
+            <span class="work-item active-work" data-filter="all">All</span>
+            <span class="work-item" data-filter=".react">React</span> 
+             <span class="work-item" data-filter=".node">Node</span> 
+        </div>
+
+        <div class="work-container container grid">
+            <div class="work-card mix all">
+                <img src="images/projects/Simon_Game.jpg" alt="simon game img" class="work-img">
+                <h3 class="work-title">Simon Game</h3>
+                <span class="work-button">more info
+                    <i class="fa-solid fa-arrow-right work-button-icon"></i>
+                </span>
+                <div class="portfolio-item-details">
+                    <h3 class="details-title">Mini Game</h3>
+                    <p class="details-description">A color sequence game to challange your memeory</p>
+                    <ul class="details-info">
+                        <li>Created - <span>23 Jan 2022</span></li>
+                        <li>Technologies - <span>Javascrtipt, HTML, CSS </span></li>
+                    </ul>
+                    <a href="https://khomotsotibane.github.io/SimonGame/" class="view-live">Demo</a>
+                </div>
+            </div>
+
+            <div class="work-card mix node">
+                <img src="images/projects/todolist.jpg" alt="todo List img" class="work-img">
+                <h3 class="work-title">Todo List</h3>
+                <span class="work-button">more info
+                    <i class="fa-solid fa-arrow-right work-button-icon"></i>
+                </span>
+                <div class="portfolio-item-details">
+                    <h3 class="details-title">Todo List</h3>
+                    <p class="details-description">A todo list app that is connected to a databse for list storage.</p>
+                    <ul class="details-info">
+                        <li>Created - <span>4 Mar 2022</span></li>
+                        <li>Technologies - <span>html, css, javascript, node, mongo db</span></li>
+                    </ul>
+                    <a href="https://fathomless-reaches-13664.herokuapp.com/" class="view-live">Demo</a>
+                </div>
+            </div>
+
+            <div class="work-card mix react">
+                <img src="images/projects/wordGuess.png" alt="word guess img" class="work-img">
+                <h3 class="work-title">Word Guess</h3>
+                <span class="work-button">more info
+                    <i class="fa-solid fa-arrow-right work-button-icon"></i>
+                </span>
+                <div class="portfolio-item-details">
+                    <h3 class="details-title">Wordle clone</h3>
+                    <p class="details-description">A word guessing game that will surely keep you on your toes.</p>
+                    <ul class="details-info">
+                        <li>Created - <span>28 Apr 2022</span></li>
+                        <li>Technologies - <span>react</span></li>
+                    </ul>
+                    <a href="https://salty-scrubland-87651.herokuapp.com/" class="view-live">Demo</a>
+                </div>
+            </div>
+
+            <div class="work-card mix react">
+                <img src="images/projects/studyCards.png" alt="study cards img" class="work-img">
+                <h3 class="work-title">Study Flash Cards</h3>
+                <span class="work-button">more info
+                    <i class="fa-solid fa-arrow-right work-button-icon"></i>
+                </span>
+                <div class="portfolio-item-details">
+                    <h3 class="details-title">Study Cards</h3>
+                    <p class="details-description">A flashcards app that you can use to notes and help improve your studies</p>
+                    <ul class="details-info">
+                        <li>Created - <span>31 May 2022</span></li>
+                        <li>Technologies - <span>react</span></li>
+                    </ul>
+                    <a href=" https://khomotsotibane.github.io/StudyCardsApp/" class="view-live">Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Popup -->
+    <div class="portfolio-popup">
+        <div class="portfolio-popup-inner">
+            <div class="portfolio-popup-content grid">
+                <span class="portfolio-popup-close"><i class="fa-solid fa-xmark"></i></span>
+                <div class="pp-thumbnail">
+                    <img src="" alt="" class="portfolio-popup-img">
+                </div>
+                <div class="portfolio-popup-info">
+                    <div class="portfolio-popup-subtitle">Featured - <span>Design</span></div>
+                    <div class="portfolio-popup-body">
+                        <h3 class="details-title">App for tecnology & services</h3>
+                        <p class="details-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Earum impedit voluptatibus minima.</p>
+                        <ul class="details-info">
+                            <li>Created - <span>4 dec 2020</span></li>
+                            <li>Technologies - <span>html css</span></li>
+                        </ul>
+                        <a href="#">Live Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact me -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title" data-heading="Get in touch">Contact me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <p>I am open to working a Web Development junior role,
+                        Please feel free to shoot me an email regarding any available post.</p>
+                    <div class="icons">
+                        <div class="row">
+                            <div class="myfa-icon"><i class="fa-brands fa-linkedin"></i></div>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">
+                                    <a href="http://linkedin.com/in/khomotso-tibane-753b0186">Khomotso Tibane</a></div>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="myfa-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Gauteng, South Africa</div>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="myfa-icon"> <i class="fas fa-envelope"></i></div>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">khomotso13@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message me</div>
+
+                    <form id="contact-form" method="post" action="https://formspree.io/f/mknyqrrk">
+                        <div class="field name">
+                            <input type="text" class="input" required>
+                            <label for="">Name</label>
+                            <span>Name</span>
+                        </div>
+                        <div class="field email">
+                            <input type="email" class="input" required>
+                            <label for="">Email</label>
+                            <span>Email</span>
+                        </div>
+
+                        <div class="field">
+                            <input type="text" class="input" required>
+                            <label for="">Subject</label>
+                            <span>Subject</span>
+                        </div>
+                        <div class="field textarea">
+                            <textarea class="input" cols="30" rows="10" required></textarea>
+                            <label for="">Message</label>
+                            <span>Message</span>
+                        </div>
+
+                        <div class="button-area">
+                            <button type="submit" value="Send">Send message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <span>&copy khomotso Tibane 2022</span>
+    </footer>
+
+    <script src="./jquery.tagcanvas.js"></script>
+    <script src="./mixitup.min.js"></script>
+    <script src="./swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
